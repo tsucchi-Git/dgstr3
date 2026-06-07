@@ -378,6 +378,25 @@
         <tr>
           <td colspan="5" id="era17" class="table-text"></td>
         </tr>
+        <!-- 18スポット目 -->
+        <tr>
+          <td rowspan="5" width="30%"><img id="image18" width="100%" class="table-img"></td>
+        </tr>
+        <tr>
+          <td colspan="5" id="title18"  class="table-text"></td>
+          <td id="number18" class="table-text2"></td>
+        </tr>
+        <tr>
+          <td colspan="5" id="address18"  class="table-text"></td>
+          <td id="get_yn18" class="table-text2"></td>
+        </tr>
+        <tr>
+          <td colspan="5" id="address_detail18" class="table-text"></td>
+          <td rowspan="2"><img id="go_detail18" width="100%" class="table-img-detail"></td>
+        </tr>
+        <tr>
+          <td colspan="5" id="era18" class="table-text"></td>
+        </tr>
         <!-- 19スポット目 -->
         <tr>
           <td rowspan="5" width="30%"><img id="image19" width="100%" class="table-img"></td>
@@ -515,7 +534,8 @@
       }
       //スポット一覧を表示する
       function spot_show(array,visit_yn){
-        //ウェブページへの書き出し  
+        //ウェブページへの書き出し
+        alert(array.length) ;
         for(let i=0 ;i<array.length ;i++){
           let s_number=array[i].id;
           let s_yesno_temp=visit_yn[i];
