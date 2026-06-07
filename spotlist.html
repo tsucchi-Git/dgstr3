@@ -378,121 +378,6 @@
         <tr>
           <td colspan="5" id="era17" class="table-text"></td>
         </tr>
-        <!-- 18スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image18" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title18"  class="table-text"></td>
-          <td id="number18" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address18"  class="table-text"></td>
-          <td id="get_yn18" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail18" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail18" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era18" class="table-text"></td>
-        </tr>
-        <!-- 19スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image19" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title19"  class="table-text"></td>
-          <td id="number19" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address19"  class="table-text"></td>
-          <td id="get_yn19" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail19" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail19" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era19" class="table-text"></td>
-        </tr>
-        <!-- 20スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image20" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title20"  class="table-text"></td>
-          <td id="number20" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address20"  class="table-text"></td>
-          <td id="get_yn20" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail20" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail20" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era20" class="table-text"></td>
-        </tr>
-        <!-- 21スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image21" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title21"  class="table-text"></td>
-          <td id="number21" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address21"  class="table-text"></td>
-          <td id="get_yn21" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail21" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail21" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era21" class="table-text"></td>
-        </tr>
-        <!-- 22スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image22" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title22"  class="table-text"></td>
-          <td id="number22" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address22"  class="table-text"></td>
-          <td id="get_yn22" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail22" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail22" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era22" class="table-text"></td>
-        </tr>
-        <!-- 23スポット目 -->
-        <tr>
-          <td rowspan="5" width="30%"><img id="image23" width="100%" class="table-img"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="title23"  class="table-text"></td>
-          <td id="number23" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address23"  class="table-text"></td>
-          <td id="get_yn23" class="table-text2"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="address_detail23" class="table-text"></td>
-          <td rowspan="2"><img id="go_detail23" width="100%" class="table-img-detail"></td>
-        </tr>
-        <tr>
-          <td colspan="5" id="era23" class="table-text"></td>
-        </tr>
-
       </tbody>
   </table>
   <script>
@@ -516,7 +401,7 @@
           } else if(area_no==2){ 
               var area_text="～有田川流域編～"; 
           } else if(area_no==3){ 
-              var area_text="～日高川町編～"; 
+              var area_text="～日高川流域編～"; 
           } else if(area_no==4){ 
               var area_text="～田辺市・西牟婁編～"; 
           } else if(area_no==5){ 
@@ -534,8 +419,7 @@
       }
       //スポット一覧を表示する
       function spot_show(array,visit_yn){
-        //ウェブページへの書き出し
-        alert(array.length) ;
+        //ウェブページへの書き出し  
         for(let i=0 ;i<array.length ;i++){
           let s_number=array[i].id;
           let s_yesno_temp=visit_yn[i];
