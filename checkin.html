@@ -53,9 +53,19 @@
       margin-top:8px;
       margin-bottom:10px;
       text-align:center;
-      font-size:14px;
+      font-size:12px;
       font-weight:bold;
-      color:#2d572c;
+      color:#000;
+    }
+    
+    .leaf-text{
+      color:#7ac943;   /* 添付画像のグリーンリーフに近い色 */
+    }
+    
+    .triangle-text{
+      color:red;
+      font-size:20px;
+      vertical-align:middle;
     }
     @keyframes anime2 {
       from {
@@ -100,7 +110,8 @@
   <!- 地図用idの作成 -->
   <div id="mapid_site" ></div> 
   <div class="map-note">
-  グリーンリーフの枝先の赤色の三角の先端にスポットがあります。
+    <span class="leaf-text">※グリーンリーフ</span>の枝先の
+    <span class="triangle-text">▼</span>の先端にスポットがあります。
   </div>
 <script>
     var Curlat;  //現在地の緯度
