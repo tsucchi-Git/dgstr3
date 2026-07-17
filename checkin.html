@@ -49,6 +49,14 @@
       animation: anime2 0.5s ease 0s 5 alternate; 
       transform-origin:center;
     }
+    .map-note{
+      margin-top:8px;
+      margin-bottom:10px;
+      text-align:center;
+      font-size:14px;
+      font-weight:bold;
+      color:#2d572c;
+    }
     @keyframes anime2 {
       from {
         transform: scale(0.9,0.9);
@@ -91,6 +99,9 @@
   <div id="markerDistance" class="text_button"></div> 
   <!- 地図用idの作成 -->
   <div id="mapid_site" ></div> 
+  <div class="map-note">
+  グリーンリーフの枝先の赤色の三角の先端にスポットがあります。
+  </div>
 <script>
     var Curlat;  //現在地の緯度
     var Curlng;  //現在地の経度
